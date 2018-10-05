@@ -1,0 +1,1006 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>mindpipe.validation package &mdash; Microbial Interaction Database Pipeline 0.3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Microbial Interaction Database Pipeline
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Microbial Interaction Database Pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">mindpipe</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="mindpipe.html">mindpipe package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="mindpipe.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="mindpipe.config.html">mindpipe.config package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mindpipe.conversion.html">mindpipe.conversion package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mindpipe.logging.html">mindpipe.logging package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mindpipe.main.html">mindpipe.main package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mindpipe.pipelines.html">mindpipe.pipelines package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mindpipe.utils.html">mindpipe.utils package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">mindpipe.validation package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="mindpipe.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mindpipe.html#module-mindpipe.cli">mindpipe.cli module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mindpipe.html#module-mindpipe.mindpipe">mindpipe.mindpipe module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mindpipe.html#module-mindpipe">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">Changelog</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Microbial Interaction Database Pipeline</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">mindpipe</a> &raquo;</li>
+        
+          <li><a href="mindpipe.html">mindpipe package</a> &raquo;</li>
+        
+      <li>mindpipe.validation package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/mindpipe.validation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="mindpipe-validation-package">
+<h1>mindpipe.validation package<a class="headerlink" href="#mindpipe-validation-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-mindpipe.validation.otu_schema">
+<span id="mindpipe-validation-otu-schema-module"></span><h2>mindpipe.validation.otu_schema module<a class="headerlink" href="#module-mindpipe.validation.otu_schema" title="Permalink to this headline">¶</a></h2>
+<p>Module that defines the schema for a valid OTU table</p>
+<dl class="class">
+<dt id="mindpipe.validation.otu_schema.BiomType">
+<em class="property">class </em><code class="descclassname">mindpipe.validation.otu_schema.</code><code class="descname">BiomType</code><span class="sig-paren">(</span><em>norm=False</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#BiomType"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.BiomType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">schematics.types.base.BaseType</span></code></p>
+<p>DataType that describes the expected structure and format for the <cite>biom.Table</cite></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>norm</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional</span></dt>
+<dd><p class="first last">True if abundances are normalized
+Default value is False</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>default</strong></dt>
+<dd></dd>
+<dt><strong>native_type</strong></dt>
+<dd></dd>
+<dt><strong>primitive_type</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">__call__</span></code>(value[,&nbsp;context])</td>
+<td>Call self as a function.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_native</span></code>(value[,&nbsp;context])</td>
+<td>Convert untrusted data to a richer Python construct.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_primitive</span></code>(value[,&nbsp;context])</td>
+<td>Convert internal data to a value safe to serialize.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate</span></code>(value[,&nbsp;context])</td>
+<td>Validate the field and return a converted value or raise a <code class="docutils literal notranslate"><span class="pre">ValidationError</span></code> with a list of errors raised by the validation chain.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#mindpipe.validation.otu_schema.BiomType.validate_data" title="mindpipe.validation.otu_schema.BiomType.validate_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_data</span></code></a>(value)</td>
+<td>Check whether the data in the Table is valid</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#mindpipe.validation.otu_schema.BiomType.validate_index" title="mindpipe.validation.otu_schema.BiomType.validate_index"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_index</span></code></a>(value)</td>
+<td>Check whether the indices in the Table are valid</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#mindpipe.validation.otu_schema.BiomType.validate_istable" title="mindpipe.validation.otu_schema.BiomType.validate_istable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_istable</span></code></a>(value)</td>
+<td>Check whether the object is a <cite>biom.Table</cite></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#mindpipe.validation.otu_schema.BiomType.validate_obs_metadata" title="mindpipe.validation.otu_schema.BiomType.validate_obs_metadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_obs_metadata</span></code></a>(value)</td>
+<td>Check whether the observation metadata in the Table is valid</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#mindpipe.validation.otu_schema.BiomType.validate_sample_metadata" title="mindpipe.validation.otu_schema.BiomType.validate_sample_metadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_sample_metadata</span></code></a>(value)</td>
+<td>Check whether the sample metadata in the Table is valid</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#mindpipe.validation.otu_schema.BiomType.validate_samples" title="mindpipe.validation.otu_schema.BiomType.validate_samples"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_samples</span></code></a>(value)</td>
+<td>Check whether the samples (columns) of the Table are valid</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="67%" />
+<col width="33%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>check_required</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>convert</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>export</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>get_export_level</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>get_input_keys</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>mock</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>pre_setattr</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>validate_choices</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="mindpipe.validation.otu_schema.BiomType.MESSAGES">
+<code class="descname">MESSAGES</code><em class="property"> = {'choices': &lt;schematics.translator.LazyText object&gt;, 'required': &lt;schematics.translator.LazyText object&gt;}</em><a class="headerlink" href="#mindpipe.validation.otu_schema.BiomType.MESSAGES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.BiomType.validate_data">
+<code class="descname">validate_data</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#BiomType.validate_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.BiomType.validate_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check whether the data in the Table is valid</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.BiomType.validate_index">
+<code class="descname">validate_index</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#BiomType.validate_index"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.BiomType.validate_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check whether the indices in the Table are valid</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.BiomType.validate_istable">
+<code class="descname">validate_istable</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#BiomType.validate_istable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.BiomType.validate_istable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check whether the object is a <cite>biom.Table</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.BiomType.validate_obs_metadata">
+<code class="descname">validate_obs_metadata</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#BiomType.validate_obs_metadata"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.BiomType.validate_obs_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check whether the observation metadata in the Table is valid</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.BiomType.validate_sample_metadata">
+<code class="descname">validate_sample_metadata</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#BiomType.validate_sample_metadata"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.BiomType.validate_sample_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check whether the sample metadata in the Table is valid</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.BiomType.validate_samples">
+<code class="descname">validate_samples</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#BiomType.validate_samples"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.BiomType.validate_samples" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check whether the samples (columns) of the Table are valid</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="mindpipe.validation.otu_schema.DataType">
+<em class="property">class </em><code class="descclassname">mindpipe.validation.otu_schema.</code><code class="descname">DataType</code><span class="sig-paren">(</span><em>norm</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#DataType"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.DataType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">schematics.types.base.BaseType</span></code></p>
+<p>” DataType that describes the expected structure and format for abundance values</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>default</strong></dt>
+<dd></dd>
+<dt><strong>native_type</strong></dt>
+<dd></dd>
+<dt><strong>primitive_type</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">__call__</span></code>(value[,&nbsp;context])</td>
+<td>Call self as a function.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_native</span></code>(value[,&nbsp;context])</td>
+<td>Convert untrusted data to a richer Python construct.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_primitive</span></code>(value[,&nbsp;context])</td>
+<td>Convert internal data to a value safe to serialize.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate</span></code>(value[,&nbsp;context])</td>
+<td>Validate the field and return a converted value or raise a <code class="docutils literal notranslate"><span class="pre">ValidationError</span></code> with a list of errors raised by the validation chain.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="71%" />
+<col width="29%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>check_required</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>convert</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>export</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>get_export_level</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>get_input_keys</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>mock</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>pre_setattr</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>validate_choices</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>validate_data_npfloat</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>validate_data_range</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="mindpipe.validation.otu_schema.DataType.MESSAGES">
+<code class="descname">MESSAGES</code><em class="property"> = {'choices': &lt;schematics.translator.LazyText object&gt;, 'required': &lt;schematics.translator.LazyText object&gt;}</em><a class="headerlink" href="#mindpipe.validation.otu_schema.DataType.MESSAGES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.DataType.validate_data_npfloat">
+<code class="descname">validate_data_npfloat</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#DataType.validate_data_npfloat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.DataType.validate_data_npfloat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.DataType.validate_data_range">
+<code class="descname">validate_data_range</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#DataType.validate_data_range"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.DataType.validate_data_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="mindpipe.validation.otu_schema.HeaderType">
+<em class="property">class </em><code class="descclassname">mindpipe.validation.otu_schema.</code><code class="descname">HeaderType</code><span class="sig-paren">(</span><em>required=False</em>, <em>default=Undefined</em>, <em>serialized_name=None</em>, <em>choices=None</em>, <em>validators=None</em>, <em>deserialize_from=None</em>, <em>export_level=None</em>, <em>serialize_when_none=None</em>, <em>messages=None</em>, <em>metadata=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#HeaderType"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.HeaderType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">schematics.types.base.BaseType</span></code></p>
+<p>DataType that describes the expected structure and format for the sample headers</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>default</strong></dt>
+<dd></dd>
+<dt><strong>native_type</strong></dt>
+<dd></dd>
+<dt><strong>primitive_type</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">__call__</span></code>(value[,&nbsp;context])</td>
+<td>Call self as a function.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_native</span></code>(value[,&nbsp;context])</td>
+<td>Convert untrusted data to a richer Python construct.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_primitive</span></code>(value[,&nbsp;context])</td>
+<td>Convert internal data to a value safe to serialize.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate</span></code>(value[,&nbsp;context])</td>
+<td>Validate the field and return a converted value or raise a <code class="docutils literal notranslate"><span class="pre">ValidationError</span></code> with a list of errors raised by the validation chain.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#mindpipe.validation.otu_schema.HeaderType.validate_header" title="mindpipe.validation.otu_schema.HeaderType.validate_header"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_header</span></code></a>(value)</td>
+<td>Check whether the header is valid</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="67%" />
+<col width="33%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>check_required</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>convert</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>export</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>get_export_level</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>get_input_keys</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>mock</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>pre_setattr</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>validate_choices</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="mindpipe.validation.otu_schema.HeaderType.MESSAGES">
+<code class="descname">MESSAGES</code><em class="property"> = {'choices': &lt;schematics.translator.LazyText object&gt;, 'required': &lt;schematics.translator.LazyText object&gt;}</em><a class="headerlink" href="#mindpipe.validation.otu_schema.HeaderType.MESSAGES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.HeaderType.validate_header">
+<code class="descname">validate_header</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#HeaderType.validate_header"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.HeaderType.validate_header" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check whether the header is valid</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="mindpipe.validation.otu_schema.IndexType">
+<em class="property">class </em><code class="descclassname">mindpipe.validation.otu_schema.</code><code class="descname">IndexType</code><span class="sig-paren">(</span><em>required=False</em>, <em>default=Undefined</em>, <em>serialized_name=None</em>, <em>choices=None</em>, <em>validators=None</em>, <em>deserialize_from=None</em>, <em>export_level=None</em>, <em>serialize_when_none=None</em>, <em>messages=None</em>, <em>metadata=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#IndexType"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.IndexType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">schematics.types.base.BaseType</span></code></p>
+<p>DataType that describes the expected structure and format for the OTU indices</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>default</strong></dt>
+<dd></dd>
+<dt><strong>native_type</strong></dt>
+<dd></dd>
+<dt><strong>primitive_type</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">__call__</span></code>(value[,&nbsp;context])</td>
+<td>Call self as a function.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_native</span></code>(value[,&nbsp;context])</td>
+<td>Convert untrusted data to a richer Python construct.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_primitive</span></code>(value[,&nbsp;context])</td>
+<td>Convert internal data to a value safe to serialize.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate</span></code>(value[,&nbsp;context])</td>
+<td>Validate the field and return a converted value or raise a <code class="docutils literal notranslate"><span class="pre">ValidationError</span></code> with a list of errors raised by the validation chain.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="71%" />
+<col width="29%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>check_required</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>convert</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>export</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>get_export_level</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>get_input_keys</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>mock</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>pre_setattr</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>validate_choices</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>validate_index_str</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>validate_index_unique</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="mindpipe.validation.otu_schema.IndexType.MESSAGES">
+<code class="descname">MESSAGES</code><em class="property"> = {'choices': &lt;schematics.translator.LazyText object&gt;, 'required': &lt;schematics.translator.LazyText object&gt;}</em><a class="headerlink" href="#mindpipe.validation.otu_schema.IndexType.MESSAGES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.IndexType.validate_index_str">
+<code class="descname">validate_index_str</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#IndexType.validate_index_str"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.IndexType.validate_index_str" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.IndexType.validate_index_unique">
+<code class="descname">validate_index_unique</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#IndexType.validate_index_unique"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.IndexType.validate_index_unique" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="mindpipe.validation.otu_schema.ObsmetaType">
+<em class="property">class </em><code class="descclassname">mindpipe.validation.otu_schema.</code><code class="descname">ObsmetaType</code><span class="sig-paren">(</span><em>required=False</em>, <em>default=Undefined</em>, <em>serialized_name=None</em>, <em>choices=None</em>, <em>validators=None</em>, <em>deserialize_from=None</em>, <em>export_level=None</em>, <em>serialize_when_none=None</em>, <em>messages=None</em>, <em>metadata=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#ObsmetaType"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.ObsmetaType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">schematics.types.base.BaseType</span></code></p>
+<p>DataType that describes the expected structure and format for the observation metadata</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>default</strong></dt>
+<dd></dd>
+<dt><strong>native_type</strong></dt>
+<dd></dd>
+<dt><strong>primitive_type</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">__call__</span></code>(value[,&nbsp;context])</td>
+<td>Call self as a function.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_native</span></code>(value[,&nbsp;context])</td>
+<td>Convert untrusted data to a richer Python construct.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_primitive</span></code>(value[,&nbsp;context])</td>
+<td>Convert internal data to a value safe to serialize.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate</span></code>(value[,&nbsp;context])</td>
+<td>Validate the field and return a converted value or raise a <code class="docutils literal notranslate"><span class="pre">ValidationError</span></code> with a list of errors raised by the validation chain.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="74%" />
+<col width="26%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>check_required</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>convert</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>export</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>get_export_level</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>get_input_keys</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>mock</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>pre_setattr</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>validate_choices</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>validate_index</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>validate_obsmeta_data</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>validate_obsmeta_headers</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="mindpipe.validation.otu_schema.ObsmetaType.MESSAGES">
+<code class="descname">MESSAGES</code><em class="property"> = {'choices': &lt;schematics.translator.LazyText object&gt;, 'required': &lt;schematics.translator.LazyText object&gt;}</em><a class="headerlink" href="#mindpipe.validation.otu_schema.ObsmetaType.MESSAGES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.ObsmetaType.validate_index">
+<code class="descname">validate_index</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#ObsmetaType.validate_index"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.ObsmetaType.validate_index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.ObsmetaType.validate_obsmeta_data">
+<code class="descname">validate_obsmeta_data</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#ObsmetaType.validate_obsmeta_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.ObsmetaType.validate_obsmeta_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.ObsmetaType.validate_obsmeta_headers">
+<code class="descname">validate_obsmeta_headers</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#ObsmetaType.validate_obsmeta_headers"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.ObsmetaType.validate_obsmeta_headers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="mindpipe.validation.otu_schema.SamplemetaType">
+<em class="property">class </em><code class="descclassname">mindpipe.validation.otu_schema.</code><code class="descname">SamplemetaType</code><span class="sig-paren">(</span><em>required=False</em>, <em>default=Undefined</em>, <em>serialized_name=None</em>, <em>choices=None</em>, <em>validators=None</em>, <em>deserialize_from=None</em>, <em>export_level=None</em>, <em>serialize_when_none=None</em>, <em>messages=None</em>, <em>metadata=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#SamplemetaType"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.SamplemetaType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">schematics.types.base.BaseType</span></code></p>
+<p>DataType that describes the expected structure and format for the sample metadata</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>default</strong></dt>
+<dd></dd>
+<dt><strong>native_type</strong></dt>
+<dd></dd>
+<dt><strong>primitive_type</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">__call__</span></code>(value[,&nbsp;context])</td>
+<td>Call self as a function.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_native</span></code>(value[,&nbsp;context])</td>
+<td>Convert untrusted data to a richer Python construct.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_primitive</span></code>(value[,&nbsp;context])</td>
+<td>Convert internal data to a value safe to serialize.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate</span></code>(value[,&nbsp;context])</td>
+<td>Validate the field and return a converted value or raise a <code class="docutils literal notranslate"><span class="pre">ValidationError</span></code> with a list of errors raised by the validation chain.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="76%" />
+<col width="24%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>check_required</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>convert</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>export</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>get_export_level</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>get_input_keys</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>mock</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>pre_setattr</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>validate_choices</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>validate_samplemeta_columns</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>validate_samplemeta_index</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>validate_structure</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="mindpipe.validation.otu_schema.SamplemetaType.MESSAGES">
+<code class="descname">MESSAGES</code><em class="property"> = {'choices': &lt;schematics.translator.LazyText object&gt;, 'required': &lt;schematics.translator.LazyText object&gt;}</em><a class="headerlink" href="#mindpipe.validation.otu_schema.SamplemetaType.MESSAGES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.SamplemetaType.validate_samplemeta_columns">
+<code class="descname">validate_samplemeta_columns</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#SamplemetaType.validate_samplemeta_columns"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.SamplemetaType.validate_samplemeta_columns" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.SamplemetaType.validate_samplemeta_index">
+<code class="descname">validate_samplemeta_index</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#SamplemetaType.validate_samplemeta_index"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.SamplemetaType.validate_samplemeta_index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_schema.SamplemetaType.validate_structure">
+<code class="descname">validate_structure</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_schema.html#SamplemetaType.validate_structure"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_schema.SamplemetaType.validate_structure" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-mindpipe.validation.otu_validator">
+<span id="mindpipe-validation-otu-validator-module"></span><h2>mindpipe.validation.otu_validator module<a class="headerlink" href="#module-mindpipe.validation.otu_validator" title="Permalink to this headline">¶</a></h2>
+<p>Module that deals with the validation of an OTU table</p>
+<dl class="class">
+<dt id="mindpipe.validation.otu_validator.OtuValidator">
+<em class="property">class </em><code class="descclassname">mindpipe.validation.otu_validator.</code><code class="descname">OtuValidator</code><span class="sig-paren">(</span><em>dtype: str</em>, <em>ext: Optional[str] = None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/validation/otu_validator.html#OtuValidator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_validator.OtuValidator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Validates input <cite>OTU</cite> table file and returns the <cite>Otu</cite> instance of the file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>dtype</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{‘biom’, ‘tsv’}</span></dt>
+<dd><p class="first last">The type of OtuValidator instance to be created</p>
+</dd>
+<dt><strong>ext</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd><p class="first last">The extension of the file if other than supported extensions
+Supported extensions:
+‘tsv’ dtype: ‘tsv’, ‘txt’, ‘counts’
+‘biom’ dtype: ‘biom’, ‘hdf5’</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>ValidationError</strong></dt>
+<dd><p class="first last">If any of the files do not conform to the schema outlines in <cite>otu_schema</cite></p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>We assume that the extension dictates the filetype</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><a class="reference internal" href="#mindpipe.validation.otu_validator.OtuValidator.configuration" title="mindpipe.validation.otu_validator.OtuValidator.configuration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">configuration</span></code></a> <span class="classifier-delimiter">:</span> <span class="classifier">Dict[str, Any]</span></dt>
+<dd><p class="first last">Dictionary showing the current configuration of the instance</p>
+</dd>
+<dt><strong>validator</strong> <span class="classifier-delimiter">:</span> <span class="classifier">BiomType</span></dt>
+<dd><p class="first last">The schmatics validator instance</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#mindpipe.validation.otu_validator.OtuValidator.load_validate" title="mindpipe.validation.otu_validator.OtuValidator.load_validate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_validate</span></code></a>(otu_file,&nbsp;meta_file,&nbsp;tax_file)</td>
+<td>Load the data and validate</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="mindpipe.validation.otu_validator.OtuValidator.configuration">
+<code class="descname">configuration</code><a class="headerlink" href="#mindpipe.validation.otu_validator.OtuValidator.configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dictionary showing the current configuration of the instance</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Dict[str, Union[str, List[str]]]</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.validation.otu_validator.OtuValidator.load_validate">
+<code class="descname">load_validate</code><span class="sig-paren">(</span><em>otu_file: pathlib.Path</em>, <em>meta_file: Optional[pathlib.Path] = None</em>, <em>tax_file: Optional[pathlib.Path] = None</em><span class="sig-paren">)</span> &#x2192; biom.table.Table<a class="reference internal" href="_modules/mindpipe/validation/otu_validator.html#OtuValidator.load_validate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.validation.otu_validator.OtuValidator.load_validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the data and validate</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>otu_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pathlib.Path</span></dt>
+<dd><p class="first last">The path to the <cite>OTU</cite> counts table</p>
+</dd>
+<dt><strong>meta_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pathlib.Path, optional</span></dt>
+<dd><p class="first last">The path to the sample metadata file
+This argument is required if <cite>dtype</cite> is ‘tsv’</p>
+</dd>
+<dt><strong>tax_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pathlib.Path, optional</span></dt>
+<dd><p class="first last">The path to the taxonomy file
+This argument is required if <cite>dtype</cite> is ‘tsv’</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Table</strong></dt>
+<dd><p class="first last"><cite>biom.Table</cite> containing all the data</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-mindpipe.validation">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-mindpipe.validation" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Dileep Kishore.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.3.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

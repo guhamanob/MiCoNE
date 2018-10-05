@@ -1,0 +1,1189 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>mindpipe.main package &mdash; Microbial Interaction Database Pipeline 0.3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="mindpipe.logging package" href="mindpipe.logging.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Microbial Interaction Database Pipeline
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Microbial Interaction Database Pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">mindpipe</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="mindpipe.html">mindpipe package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="mindpipe.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="mindpipe.config.html">mindpipe.config package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mindpipe.conversion.html">mindpipe.conversion package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mindpipe.logging.html">mindpipe.logging package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">mindpipe.main package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mindpipe.pipelines.html">mindpipe.pipelines package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mindpipe.utils.html">mindpipe.utils package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mindpipe.validation.html">mindpipe.validation package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="mindpipe.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mindpipe.html#module-mindpipe.cli">mindpipe.cli module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mindpipe.html#module-mindpipe.mindpipe">mindpipe.mindpipe module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mindpipe.html#module-mindpipe">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">Changelog</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Microbial Interaction Database Pipeline</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">mindpipe</a> &raquo;</li>
+        
+          <li><a href="mindpipe.html">mindpipe package</a> &raquo;</li>
+        
+      <li>mindpipe.main package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/mindpipe.main.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="mindpipe-main-package">
+<h1>mindpipe.main package<a class="headerlink" href="#mindpipe-main-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-mindpipe.main.lineage">
+<span id="mindpipe-main-lineage-module"></span><h2>mindpipe.main.lineage module<a class="headerlink" href="#module-mindpipe.main.lineage" title="Permalink to this headline">¶</a></h2>
+<p>Module that implements the <cite>Lineage</cite> class and  methods to work with taxonomy data</p>
+<dl class="attribute">
+<dt id="mindpipe.main.lineage.BaseLineage">
+<code class="descclassname">mindpipe.main.lineage.</code><code class="descname">BaseLineage</code><a class="headerlink" href="#mindpipe.main.lineage.BaseLineage" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#mindpipe.main.lineage.Lineage" title="mindpipe.main.lineage.Lineage"><code class="xref py py-class docutils literal notranslate"><span class="pre">mindpipe.main.lineage.Lineage</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="mindpipe.main.lineage.Lineage">
+<em class="property">class </em><code class="descclassname">mindpipe.main.lineage.</code><code class="descname">Lineage</code><a class="reference internal" href="_modules/mindpipe/main/lineage.html#Lineage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.lineage.Lineage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#mindpipe.main.lineage.Lineage" title="mindpipe.main.lineage.Lineage"><code class="xref py py-class docutils literal notranslate"><span class="pre">mindpipe.main.lineage.Lineage</span></code></a></p>
+<p><cite>NamedTuple</cite> that stores the lineage of a taxon and methods to interact with it</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Kingdom: str</strong></dt>
+<dd></dd>
+<dt><strong>Phylum: str</strong></dt>
+<dd></dd>
+<dt><strong>Class: str</strong></dt>
+<dd></dd>
+<dt><strong>Order: str</strong></dt>
+<dd></dd>
+<dt><strong>Family: str</strong></dt>
+<dd></dd>
+<dt><strong>Genus: str</strong></dt>
+<dd></dd>
+<dt><strong>Species: str</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">count</span></code>(value)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#mindpipe.main.lineage.Lineage.from_str" title="mindpipe.main.lineage.Lineage.from_str"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_str</span></code></a>(lineage_str,&nbsp;style)</td>
+<td>Create <cite>Lineage</cite> instance from a lineage string</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#mindpipe.main.lineage.Lineage.get_superset" title="mindpipe.main.lineage.Lineage.get_superset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_superset</span></code></a>(level)</td>
+<td>Return a superset of the current lineage for the requested level</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">index</span></code>(value,&nbsp;[start,&nbsp;[stop]])</td>
+<td>Raises ValueError if the value is not present.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#mindpipe.main.lineage.Lineage.to_dict" title="mindpipe.main.lineage.Lineage.to_dict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_dict</span></code></a>(level)</td>
+<td>Get the lineage in the form of a dictionary</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#mindpipe.main.lineage.Lineage.to_str" title="mindpipe.main.lineage.Lineage.to_str"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_str</span></code></a>(style,&nbsp;level)</td>
+<td>Return the string Lineage of the instance in requested ‘style’</td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="mindpipe.main.lineage.Lineage.from_str">
+<em class="property">classmethod </em><code class="descname">from_str</code><span class="sig-paren">(</span><em>lineage_str: str</em>, <em>style: str = 'gg'</em><span class="sig-paren">)</span> &#x2192; mindpipe.main.lineage.Lineage<a class="reference internal" href="_modules/mindpipe/main/lineage.html#Lineage.from_str"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.lineage.Lineage.from_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create <cite>Lineage</cite> instance from a lineage string</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>lineage_str</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Lineage in the form of a string</p>
+</dd>
+<dt><strong>style</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{‘gg’, ‘silva’}, optional</span></dt>
+<dd><p class="first last">The style of the lineage string
+Default is ‘gg’</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Lineage</strong></dt>
+<dd><p class="first last">Instance of the <cite>Lineage</cite> class</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.main.lineage.Lineage.get_superset">
+<code class="descname">get_superset</code><span class="sig-paren">(</span><em>level: str</em><span class="sig-paren">)</span> &#x2192; mindpipe.main.lineage.Lineage<a class="reference internal" href="_modules/mindpipe/main/lineage.html#Lineage.get_superset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.lineage.Lineage.get_superset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a superset of the current lineage for the requested level</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>level</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The lowest Lineage field to be used to calculate the superset</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Lineage</strong></dt>
+<dd><p class="first last">Lineage instance that is a superset of current instance</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="mindpipe.main.lineage.Lineage.name">
+<code class="descname">name</code><a class="headerlink" href="#mindpipe.main.lineage.Lineage.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the lowest populated level and name of the taxon</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Tuple[str, str]</strong></dt>
+<dd><p class="first last">Tuple containing (level, name)</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="mindpipe.main.lineage.Lineage.taxid">
+<code class="descname">taxid</code><a class="headerlink" href="#mindpipe.main.lineage.Lineage.taxid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the NCBI taxonomy id of the Lineage</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>int</strong></dt>
+<dd><p class="first last">The NCBI taxonomy id</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.main.lineage.Lineage.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><em>level: str</em><span class="sig-paren">)</span> &#x2192; Dict[str, str]<a class="reference internal" href="_modules/mindpipe/main/lineage.html#Lineage.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.lineage.Lineage.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the lineage in the form of a dictionary</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>level</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The lowest Lineage field to be used to populate the dictionary</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.main.lineage.Lineage.to_str">
+<code class="descname">to_str</code><span class="sig-paren">(</span><em>style: str</em>, <em>level: str</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/mindpipe/main/lineage.html#Lineage.to_str"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.lineage.Lineage.to_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the string Lineage of the instance in requested ‘style’</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>style</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{‘gg’, ‘silva’}</span></dt>
+<dd><p class="first last">The style of the lineage string</p>
+</dd>
+<dt><strong>level</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The lowest Lineage field that is to be populated</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>str</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-mindpipe.main.network">
+<span id="mindpipe-main-network-module"></span><h2>mindpipe.main.network module<a class="headerlink" href="#module-mindpipe.main.network" title="Permalink to this headline">¶</a></h2>
+<p>Module that defines the <cite>Network</cite> object and methods to read, write and manipulate it</p>
+<dl class="class">
+<dt id="mindpipe.main.network.Network">
+<em class="property">class </em><code class="descclassname">mindpipe.main.network.</code><code class="descname">Network</code><span class="sig-paren">(</span><em>interactions: pandas.core.frame.DataFrame</em>, <em>metadata: dict</em>, <em>cmetadata: dict</em>, <em>obs_metadata: pandas.core.frame.DataFrame</em>, <em>pvalues: Optional[pandas.core.frame.DataFrame] = None</em>, <em>children_map: Optional[dict] = None</em>, <em>interaction_type: str = 'correlation'</em>, <em>interaction_threshold: float = 0.3</em>, <em>pvalue_threshold: float = 0.05</em>, <em>pvalue_correction: Optional[str] = 'fdr_bh'</em>, <em>directed: bool = False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/main/network.html#Network"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.network.Network" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class that represents a network object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>interactions</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pd.DataFrame</span></dt>
+<dd><p class="first last">The <cite>DataFrame</cite> containing the matrix of interactions</p>
+</dd>
+<dt><strong>metadata</strong> <span class="classifier-delimiter">:</span> <span class="classifier">dict</span></dt>
+<dd><p class="first last">The metadata for the whole network (general and experiment)
+Must contain ‘host’, ‘condition’, ‘location’, ‘experimental_metadata’, ‘pubmed_id’,
+‘description’, ‘date’, ‘authors</p>
+</dd>
+<dt><strong>cmetadata</strong> <span class="classifier-delimiter">:</span> <span class="classifier">dict</span></dt>
+<dd><p class="first last">The computational metadata for the whole network
+Must contain information as to how the network was generated</p>
+</dd>
+<dt><strong>obs_metadata</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pd.DataFrame</span></dt>
+<dd><p class="first last">The <cite>DataFrame</cite> containing taxonomy information for the nodes of the network
+If this contains an ‘Abundance’ column then it is incorporated into the network</p>
+</dd>
+<dt><strong>pvalues</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pd.DataFrame, optional</span></dt>
+<dd><p class="first last">The <cite>DataFrame</cite> containing the matrix of pvalues</p>
+</dd>
+<dt><strong>children_map</strong> <span class="classifier-delimiter">:</span> <span class="classifier">dict, optional</span></dt>
+<dd><p class="first last">The dictionary that contains the mapping {obs_id =&gt; [children]}</p>
+</dd>
+<dt><strong>interaction_type</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd><p class="first last">The type of interaction encoded by the edges of the network
+Default value is correlation</p>
+</dd>
+<dt><strong>interaction_threshold</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float, optional</span></dt>
+<dd><p class="first last">The value to which the interactions (absolute value) are to be thresholded
+To disable thresholding based on interaction value then pass in 0.0
+Default value is 0.3</p>
+</dd>
+<dt><strong>pvalue_threshold</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float, optional</span></dt>
+<dd><p class="first last">This is the <cite>alpha</cite> value for pvalue cutoff
+Default value is 0.05</p>
+</dd>
+<dt><strong>pvalue_correction</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd><p class="first last">The method to use for multiple hypothesis correction
+Default value is ‘fdr_bh’
+Set to None to turn off multiple hypothesis correction
+Use <cite>Network.pcorr_methods</cite> to get the list of supported methods</p>
+</dd>
+<dt><strong>directed</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional</span></dt>
+<dd><p class="first last">True if network is directed
+Default value is False</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">network</span> <span class="o">=</span> <span class="n">Network</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>nodes</strong> <span class="classifier-delimiter">:</span> <span class="classifier">List[Dict[str, Any]]</span></dt>
+<dd><p class="first last">The list of nodes in the network and their corresponding properties</p>
+</dd>
+<dt><strong>links</strong> <span class="classifier-delimiter">:</span> <span class="classifier">List[Dict[str, Any]]</span></dt>
+<dd><p class="first last">The list of links in the network and their corresponding properties</p>
+</dd>
+<dt><strong>links_thres</strong> <span class="classifier-delimiter">:</span> <span class="classifier">List[Dict[str, Any]]</span></dt>
+<dd><p class="first last">The list of links in the network after applying thresholds</p>
+</dd>
+<dt><strong>metadata</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Dict[str, Any]</span></dt>
+<dd><p class="first last">The metadata for the network</p>
+</dd>
+<dt><a class="reference internal" href="#mindpipe.main.network.Network.graph" title="mindpipe.main.network.Network.graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">graph</span></code></a> <span class="classifier-delimiter">:</span> <span class="classifier">nx.Graph</span></dt>
+<dd><p class="first last">Networkx representation of the network</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#mindpipe.main.network.Network.json" title="mindpipe.main.network.Network.json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">json</span></code></a>(threshold)</td>
+<td>Network as a JSON string</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#mindpipe.main.network.Network.load_data" title="mindpipe.main.network.Network.load_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_data</span></code></a>(interaction_file,&nbsp;meta_file,&nbsp;…)</td>
+<td>Create a <cite>Network</cite> object from files (interaction tables and other metadata)</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#mindpipe.main.network.Network.load_elist" title="mindpipe.main.network.Network.load_elist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_elist</span></code></a>(elist_file,&nbsp;meta_file,&nbsp;…)</td>
+<td>Create <cite>Network</cite> instance from an edge list and associated metadata</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#mindpipe.main.network.Network.load_json" title="mindpipe.main.network.Network.load_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_json</span></code></a>(fpath)</td>
+<td>Create a <cite>Network</cite> object from a network <cite>JSON</cite> file</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#mindpipe.main.network.Network.write" title="mindpipe.main.network.Network.write"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write</span></code></a>(fpath,&nbsp;threshold)</td>
+<td>Write network to file as JSON</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="mindpipe.main.network.Network.graph">
+<code class="descname">graph</code><a class="headerlink" href="#mindpipe.main.network.Network.graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Networkx representation of the network</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.main.network.Network.json">
+<code class="descname">json</code><span class="sig-paren">(</span><em>threshold: bool = True</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/mindpipe/main/network.html#Network.json"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.network.Network.json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Network as a JSON string</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="mindpipe.main.network.Network.load_data">
+<em class="property">classmethod </em><code class="descname">load_data</code><span class="sig-paren">(</span><em>interaction_file: str</em>, <em>meta_file: str</em>, <em>cmeta_file: str</em>, <em>obsmeta_file: str</em>, <em>pvalue_file: Optional[str] = None</em>, <em>children_file: Optional[str] = None</em>, <em>interaction_type: str = 'correlation'</em>, <em>interaction_threshold: float = 0.3</em>, <em>pvalue_threshold: float = 0.05</em>, <em>pvalue_correction: Optional[str] = 'fdr_bh'</em>, <em>directed: bool = False</em><span class="sig-paren">)</span> &#x2192; mindpipe.main.network.Network<a class="reference internal" href="_modules/mindpipe/main/network.html#Network.load_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.network.Network.load_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a <cite>Network</cite> object from files (interaction tables and other metadata)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>interaction_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The <cite>tsv</cite> file containing the matrix of interactions</p>
+</dd>
+<dt><strong>meta_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The <cite>json</cite> file containing the metadata for the whole network (general and experiment)</p>
+</dd>
+<dt><strong>cmeta_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The <cite>json</cite> file containings the computational metadata for the whole network</p>
+</dd>
+<dt><strong>obsmeta_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The <cite>csv</cite> file containing taxonomy information for the nodes of the network</p>
+</dd>
+<dt><strong>pvalue_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd><p class="first last">The <cite>tsv</cite> file containing the matrix of pvalues
+Default is None</p>
+</dd>
+<dt><strong>children_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd><p class="first last">The <cite>json</cite> file containing the mapping between observations and their children</p>
+</dd>
+<dt><strong>interaction_type</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd><p class="first last">The type of interaction encoded by the edges of the network
+Default value is correlation</p>
+</dd>
+<dt><strong>interaction_threshold</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float, optional</span></dt>
+<dd><p class="first last">The value to which the interactions (absolute value) are to be thresholded
+To disable thresholding based on interaction value then pass in 0.0
+Default value is 0.3</p>
+</dd>
+<dt><strong>pvalue_threshold</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float, optional</span></dt>
+<dd><p class="first last">This is the <cite>alpha</cite> value for pvalue cutoff
+Default value is 0.05</p>
+</dd>
+<dt><strong>pvalue_correction</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd><p class="first last">The method to use for multiple hypothesis correction
+Default value is ‘fdr_bh’
+Set to None to turn off multiple hypothesis correction
+Use <cite>Network.pcorr_methods</cite> to get the list of supported methods</p>
+</dd>
+<dt><strong>directed</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">True if network is directed
+Default value is False</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Network</strong></dt>
+<dd><p class="first last">The instance of the <cite>Network</cite> class</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="mindpipe.main.network.Network.load_elist">
+<em class="property">classmethod </em><code class="descname">load_elist</code><span class="sig-paren">(</span><em>elist_file: str</em>, <em>meta_file: str</em>, <em>cmeta_file: str</em>, <em>obsmeta_file: str</em>, <em>children_file: Optional[str] = None</em>, <em>interaction_type: str = 'correlation'</em>, <em>interaction_threshold: float = 0.3</em>, <em>pvalue_threshold: float = 0.05</em>, <em>pvalue_correction: Optional[str] = 'fdr_bh'</em>, <em>directed: bool = False</em><span class="sig-paren">)</span> &#x2192; mindpipe.main.network.Network<a class="reference internal" href="_modules/mindpipe/main/network.html#Network.load_elist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.network.Network.load_elist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create <cite>Network</cite> instance from an edge list and associated metadata</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>elist_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The csv file containing the list of edges and their associated metadata</p>
+</dd>
+<dt><strong>meta_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">dict</span></dt>
+<dd><p class="first last">The file containing metadata for the whole network (general and experiment)
+Must contain ‘host’, ‘condition’, ‘location’, ‘experimental_metadata’, ‘pubmed_id’,
+‘description’, ‘date’, ‘authors’</p>
+</dd>
+<dt><strong>cmeta_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">dict</span></dt>
+<dd><p class="first last">The computational metadata for the whole network
+Must contain information as to how the network was generated</p>
+</dd>
+<dt><strong>obsmeta_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The csv file contanining taxonomy information for the nodes of the network
+If this contains an ‘Abundance’ column then it is incorporated into the network</p>
+</dd>
+<dt><strong>children_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd><p class="first last">The json file that describes the mapping between {obs_id =&gt; [children]}</p>
+</dd>
+<dt><strong>interaction_type</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd><p class="first last">The type of interaction encoded by the edges of the network
+Default value is correlation</p>
+</dd>
+<dt><strong>interaction_threshold</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float, optional</span></dt>
+<dd><p class="first last">The value to which the interactions (absolute value) are to be thresholded
+To disable thresholding based on interaction value then pass in 0.0
+Default value is 0.3</p>
+</dd>
+<dt><strong>pvalue_threshold</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float, optional</span></dt>
+<dd><p class="first last">This is the <cite>alpha</cite> value for pvalue cutoff
+Default value is 0.05</p>
+</dd>
+<dt><strong>pvalue_correction</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd><p class="first last">The method to use for multiple hypothesis correction
+Default value is ‘fdr_bh’
+Set to None to turn off multiple hypothesis correction</p>
+</dd>
+<dt><strong>directed</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional</span></dt>
+<dd><p class="first last">True if network is directed
+Default value is False</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Network</strong></dt>
+<dd><p class="first last">The instance of the <cite>Network</cite> class</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="mindpipe.main.network.Network.load_json">
+<em class="property">classmethod </em><code class="descname">load_json</code><span class="sig-paren">(</span><em>fpath: str</em><span class="sig-paren">)</span> &#x2192; mindpipe.main.network.Network<a class="reference internal" href="_modules/mindpipe/main/network.html#Network.load_json"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.network.Network.load_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a <cite>Network</cite> object from a network <cite>JSON</cite> file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>fpath</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The path to the network <cite>JSON</cite> file</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Network</strong></dt>
+<dd><p class="first last">The instance of the <cite>Network</cite> class</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="mindpipe.main.network.Network.pcorr_methods">
+<code class="descname">pcorr_methods</code><a class="headerlink" href="#mindpipe.main.network.Network.pcorr_methods" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns list supported pvalue correction methods</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.main.network.Network.write">
+<code class="descname">write</code><span class="sig-paren">(</span><em>fpath: str</em>, <em>threshold: bool = True</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/mindpipe/main/network.html#Network.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.network.Network.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write network to file as JSON</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>fpath</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The path to the <cite>JSON</cite> file</p>
+</dd>
+<dt><strong>threshold</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional</span></dt>
+<dd><p class="first last">True if threshold needs to applied to links before writing to file</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-mindpipe.main.otu">
+<span id="mindpipe-main-otu-module"></span><h2>mindpipe.main.otu module<a class="headerlink" href="#module-mindpipe.main.otu" title="Permalink to this headline">¶</a></h2>
+<p>Module that defines the <cite>Otu</cite> objects and methods to manipulate it</p>
+<dl class="class">
+<dt id="mindpipe.main.otu.Otu">
+<em class="property">class </em><code class="descclassname">mindpipe.main.otu.</code><code class="descname">Otu</code><span class="sig-paren">(</span><em>otu_data: biom.table.Table</em>, <em>sample_metadata: Optional[pandas.core.frame.DataFrame] = None</em>, <em>obs_metadata: Optional[pandas.core.frame.DataFrame] = None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mindpipe/main/otu.html#Otu"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.otu.Otu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>An object that represents the OTU counts table</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>otu_data</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Table</span></dt>
+<dd><p class="first last"><cite>biom.Table</cite> object containing OTU data</p>
+</dd>
+<dt><strong>sample_metadata</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pd.DataFrame, optional</span></dt>
+<dd><p class="first last"><cite>pd.DataFrame</cite> containing metadata for the samples</p>
+</dd>
+<dt><strong>obs_metadata</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pd.DataFrame,  optional</span></dt>
+<dd><p class="first last"><cite>pd.DataFrame</cite> containing metadata for the observations (OTUs)</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>All methods that manipulate the Otu object return new objects</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>otu_data</strong> <span class="classifier-delimiter">:</span> <span class="classifier">biom.Table</span></dt>
+<dd><p class="first last">OTU counts table in the <cite>biom.Table</cite> format</p>
+</dd>
+<dt><a class="reference internal" href="#mindpipe.main.otu.Otu.sample_metadata" title="mindpipe.main.otu.Otu.sample_metadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sample_metadata</span></code></a> <span class="classifier-delimiter">:</span> <span class="classifier">pd.DataFrame</span></dt>
+<dd><p class="first last">Metadata for the samples</p>
+</dd>
+<dt><a class="reference internal" href="#mindpipe.main.otu.Otu.obs_metadata" title="mindpipe.main.otu.Otu.obs_metadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">obs_metadata</span></code></a> <span class="classifier-delimiter">:</span> <span class="classifier">pd.DataFrame</span></dt>
+<dd><p class="first last">Lineage data for the observations (OTUs)</p>
+</dd>
+<dt><a class="reference internal" href="#mindpipe.main.otu.Otu.tax_level" title="mindpipe.main.otu.Otu.tax_level"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tax_level</span></code></a> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Returns the taxonomy level of the Otu instance</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#mindpipe.main.otu.Otu.collapse_taxa" title="mindpipe.main.otu.Otu.collapse_taxa"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collapse_taxa</span></code></a>(level)</td>
+<td>Collapse Otu instance based on taxa</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#mindpipe.main.otu.Otu.filter" title="mindpipe.main.otu.Otu.filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter</span></code></a>(ids,&nbsp;func,&nbsp;str,&nbsp;dict],&nbsp;bool]]&nbsp;=&nbsp;None,&nbsp;…)</td>
+<td>Filter Otu instance based on ids or func</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#mindpipe.main.otu.Otu.is_norm" title="mindpipe.main.otu.Otu.is_norm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_norm</span></code></a>(axis)</td>
+<td>Returns true if the Otu instance has been normalized</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#mindpipe.main.otu.Otu.load_data" title="mindpipe.main.otu.Otu.load_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_data</span></code></a>(otu_file,&nbsp;meta_file,&nbsp;tax_file,&nbsp;…)</td>
+<td>Load data from files into the <cite>Otu</cite> class instance</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#mindpipe.main.otu.Otu.normalize" title="mindpipe.main.otu.Otu.normalize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalize</span></code></a>(axis,&nbsp;method)</td>
+<td>Normalize the OTU table along the provided axis</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#mindpipe.main.otu.Otu.partition" title="mindpipe.main.otu.Otu.partition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">partition</span></code></a>(axis,&nbsp;func,&nbsp;dict],&nbsp;…)</td>
+<td>Partition the Otu instance based on the func and axis</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#mindpipe.main.otu.Otu.rm_sparse_obs" title="mindpipe.main.otu.Otu.rm_sparse_obs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rm_sparse_obs</span></code></a>(prevalence_thres,&nbsp;abundance_thres)</td>
+<td>Remove observations with prevalence &lt; <cite>prevalence_thres</cite> and abundance &lt; <cite>abundance_thres</cite></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#mindpipe.main.otu.Otu.rm_sparse_samples" title="mindpipe.main.otu.Otu.rm_sparse_samples"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rm_sparse_samples</span></code></a>(count_thres)</td>
+<td>Remove samples with read counts less than <cite>count_thres</cite></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#mindpipe.main.otu.Otu.write" title="mindpipe.main.otu.Otu.write"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write</span></code></a>(base_name,&nbsp;fol_path,&nbsp;file_type)</td>
+<td>Write Otu instance object to required file_type</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="mindpipe.main.otu.Otu.collapse_taxa">
+<code class="descname">collapse_taxa</code><span class="sig-paren">(</span><em>level: str</em><span class="sig-paren">)</span> &#x2192; Tuple[mindpipe.main.otu.Otu, Dict[str, List[str]]]<a class="reference internal" href="_modules/mindpipe/main/otu.html#Otu.collapse_taxa"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.otu.Otu.collapse_taxa" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collapse Otu instance based on taxa</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>level</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The tax level of the collapsed table
+This will also be used as the prefix for the unique ids</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Tuple[Otu, dict]</strong></dt>
+<dd><p class="first last">Collapsed Otu instance</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.main.otu.Otu.filter">
+<code class="descname">filter</code><span class="sig-paren">(</span><em>ids: Iterable[str] = [], func: Optional[Callable[[numpy.ndarray, str, dict], bool]] = None, axis: str = 'observation'</em><span class="sig-paren">)</span> &#x2192; mindpipe.main.otu.Otu<a class="reference internal" href="_modules/mindpipe/main/otu.html#Otu.filter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.otu.Otu.filter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter Otu instance based on ids or func</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>ids</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Iterable[str], optional</span></dt>
+<dd><p class="first last">An iterable of ids to keep.
+If ids are not supplied then func must be supplied</p>
+</dd>
+<dt><strong>func</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Callable[[np.ndarray, str, dict], bool], optional</span></dt>
+<dd><p class="first last">A function that takes in (values, <a href="#id3"><span class="problematic" id="id4">id_</span></a>, md) and returns a bool
+If func is not supplied then ids must be supplied
+If both ids and func are supplied then ids are used</p>
+</dd>
+<dt><strong>axis</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{‘sample’, ‘observation’}, optional</span></dt>
+<dd><p class="first last">The axis along which to filter the Otu instance
+Default value is ‘observation’</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Otu</strong></dt>
+<dd><p class="first last">Filtered Otu instance</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.main.otu.Otu.is_norm">
+<code class="descname">is_norm</code><span class="sig-paren">(</span><em>axis: str = 'sample'</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/mindpipe/main/otu.html#Otu.is_norm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.otu.Otu.is_norm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true if the Otu instance has been normalized</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="mindpipe.main.otu.Otu.load_data">
+<em class="property">classmethod </em><code class="descname">load_data</code><span class="sig-paren">(</span><em>otu_file: str</em>, <em>meta_file: Optional[str] = None</em>, <em>tax_file: Optional[str] = None</em>, <em>dtype: str = 'biom'</em>, <em>ext: Optional[str] = None</em><span class="sig-paren">)</span> &#x2192; mindpipe.main.otu.Otu<a class="reference internal" href="_modules/mindpipe/main/otu.html#Otu.load_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.otu.Otu.load_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load data from files into the <cite>Otu</cite> class instance</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>otu_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The path to the <cite>OTU</cite> counts file</p>
+</dd>
+<dt><strong>meta_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd><p class="first last">The path to the sample metadata file</p>
+</dd>
+<dt><strong>tax_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd><p class="first last">The path to the taxonomy file</p>
+</dd>
+<dt><strong>dtype</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{‘biom’, ‘tsv’}</span></dt>
+<dd><p class="first last">The type of OTU file that is input</p>
+</dd>
+<dt><strong>ext</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd><p class="first last">The extension of the file if other than supported extensions
+Supported extensions:
+- ‘tsv’ dtype: ‘tsv’, ‘txt’, ‘counts’
+- ‘biom’ dtype: ‘biom’, ‘hdf5’</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Otu</strong></dt>
+<dd><p class="first last">An instance of the <cite>Otu</cite> class</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.main.otu.Otu.normalize">
+<code class="descname">normalize</code><span class="sig-paren">(</span><em>axis: str = 'sample'</em>, <em>method: str = 'norm'</em><span class="sig-paren">)</span> &#x2192; mindpipe.main.otu.Otu<a class="reference internal" href="_modules/mindpipe/main/otu.html#Otu.normalize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.otu.Otu.normalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalize the OTU table along the provided axis</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>axis</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{‘sample’, ‘observation’}, optional</span></dt>
+<dd><p class="first last">Axis along which to normalize the OTU table
+Default is ‘sample’</p>
+</dd>
+<dt><strong>method: {‘norm’, ‘rarefy’, ‘css’}</strong></dt>
+<dd><p class="first last">Normalization method to use</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Otu</strong></dt>
+<dd><p class="first last">Otu instance which is normalized along the given axis</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="mindpipe.main.otu.Otu.obs_metadata">
+<code class="descname">obs_metadata</code><a class="headerlink" href="#mindpipe.main.otu.Otu.obs_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lineage data for the observations (OTUs)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>pd.DataFrame</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.main.otu.Otu.partition">
+<code class="descname">partition</code><span class="sig-paren">(</span><em>axis: str, func: Callable[[str, dict], collections.abc.Hashable]</em><span class="sig-paren">)</span> &#x2192; Iterable[Tuple[str, mindpipe.main.otu.Otu]]<a class="reference internal" href="_modules/mindpipe/main/otu.html#Otu.partition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.otu.Otu.partition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Partition the Otu instance based on the func and axis</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>axis</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The axis on which to partition</p>
+</dd>
+<dt><strong>func</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Callable[[str, dict], Hashable]</span></dt>
+<dd><p class="first last">The function that takes in (id, metadata) and returns a hashable</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Iterable[Tuple[str, Otu]]</strong></dt>
+<dd><p class="first last">An iterable of tuples - (‘label’, Otu)</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<ol class="arabic simple">
+<li><dl class="first docutils">
+<dt>To group by lineage “level” use:</dt>
+<dd>func = lambda <a href="#id5"><span class="problematic" id="id6">id_</span></a>, md: Lineage(<a href="#id1"><span class="problematic" id="id2">**</span></a>md).get_superset(level)</dd>
+</dl>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.main.otu.Otu.rm_sparse_obs">
+<code class="descname">rm_sparse_obs</code><span class="sig-paren">(</span><em>prevalence_thres: float = 0.05</em>, <em>abundance_thres: float = 0.01</em><span class="sig-paren">)</span> &#x2192; mindpipe.main.otu.Otu<a class="reference internal" href="_modules/mindpipe/main/otu.html#Otu.rm_sparse_obs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.otu.Otu.rm_sparse_obs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove observations with prevalence &lt; <cite>prevalence_thres</cite> and abundance &lt; <cite>abundance_thres</cite></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>prevalence_thres</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Minimum fraction of samples the observation must be present in in order to be accepted</p>
+</dd>
+<dt><strong>abundance_thres</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Minimum observation count fraction in a sample needed in order to be accepted</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Otu</strong></dt>
+<dd><p class="first last">Otu instance with bad observations removed</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.main.otu.Otu.rm_sparse_samples">
+<code class="descname">rm_sparse_samples</code><span class="sig-paren">(</span><em>count_thres: int = 500</em><span class="sig-paren">)</span> &#x2192; mindpipe.main.otu.Otu<a class="reference internal" href="_modules/mindpipe/main/otu.html#Otu.rm_sparse_samples"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.otu.Otu.rm_sparse_samples" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove samples with read counts less than <cite>count_thres</cite></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>count_thres</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int, optional</span></dt>
+<dd><p class="first last">Counts threshold below which samples are rejected
+Default value is 500</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>Otu</strong></dt>
+<dd><p class="first last">Otu instance with low count samples removed</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>ValueError</strong></dt>
+<dd><p class="first last">If Otu instance is normalized</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="mindpipe.main.otu.Otu.sample_metadata">
+<code class="descname">sample_metadata</code><a class="headerlink" href="#mindpipe.main.otu.Otu.sample_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metadata for the samples</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>pd.DataFrame</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="mindpipe.main.otu.Otu.tax_level">
+<code class="descname">tax_level</code><a class="headerlink" href="#mindpipe.main.otu.Otu.tax_level" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the taxonomy level of the Otu instance</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>str</strong></dt>
+<dd><p class="first last">The lowest taxonomy defined in the Otu instance</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mindpipe.main.otu.Otu.write">
+<code class="descname">write</code><span class="sig-paren">(</span><em>base_name: str</em>, <em>fol_path: str = ''</em>, <em>file_type: str = 'biom'</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/mindpipe/main/otu.html#Otu.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mindpipe.main.otu.Otu.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write Otu instance object to required file_type</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>base_name</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The base name without extension to be used for the files</p>
+</dd>
+<dt><strong>fol_path</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd><p class="first last">The folder where the files are to be written
+Default is current directory</p>
+</dd>
+<dt><strong>file_type</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{‘tsv’, ‘biom’}, optional</span></dt>
+<dd><p class="first last">The type of file data is to be written to
+Default is ‘biom’</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-mindpipe.main">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-mindpipe.main" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="mindpipe.logging.html" class="btn btn-neutral" title="mindpipe.logging package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Dileep Kishore.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.3.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
